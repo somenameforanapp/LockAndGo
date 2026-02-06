@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lock N' Go Roadside Assistance | 24/7 Pensacola Roadside Service</title>
+  <meta name="description" content="Lock N' Go Roadside Assistance provides 24/7 emergency roadside service in Pensacola and Escambia County. Lockouts, tire changes, jump starts, fuel delivery. Fast, fair, done right.">
+  <meta name="keywords" content="roadside assistance, Pensacola roadside assistance, Escambia County roadside service, lockout service, tire change, jump start, fuel delivery, emergency roadside, 24/7 roadside help, Lock N Go, car lockout Pensacola, flat tire help, dead battery jump start, mobile mechanic Pensacola">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Lock N' Go Roadside Assistance",
+    "description": "24/7 emergency roadside assistance serving Pensacola, Escambia County, and surrounding areas. Services include car lockout, tire change, jump start, and fuel delivery.",
+    "url": "https://lockngoroadside.com",
+    "telephone": "(850) 466-2651",
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Pensacola",
+        "sameAs": "https://en.wikipedia.org/wiki/Pensacola,_Florida"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Escambia County"
+      }
+    ],
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "30.4213",
+      "longitude": "-87.2169"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "serviceType": [
+      "Roadside Assistance",
+      "Car Lockout Service",
+      "Tire Change",
+      "Jump Start",
+      "Fuel Delivery",
+      "Emergency Roadside Service"
+    ],
+    "knowsAbout": [
+      "roadside assistance Pensacola",
+      "car lockout Escambia County",
+      "tire change service",
+      "jump start service",
+      "fuel delivery Pensacola",
+      "emergency roadside help",
+      "24/7 roadside assistance"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pensacola",
+      "addressRegion": "FL",
+      "postalCode": "32501",
+      "addressCountry": "US"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Roadside Assistance Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Car Lockout Service" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tire Change" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Jump Start" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fuel Delivery" } }
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    /* === RESET & BASE === */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: #111111;
+      color: #f0f0f0;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* === SR-ONLY (screen-reader only) === */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* === HERO === */
+    .hero {
+      text-align: center;
+      padding: 3.5rem 1.5rem 2.5rem;
+      background: linear-gradient(180deg, #1a1a1a 0%, #111111 100%);
+      border-bottom: 3px solid #d4a017;
+    }
+
+    .hero__badge {
+      display: inline-block;
+      background: #d4a017;
+      color: #111;
+      font-weight: 700;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.35rem 1rem;
+      border-radius: 999px;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero__title {
+      font-size: clamp(2rem, 6vw, 3.25rem);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero__title span {
+      color: #d4a017;
+    }
+
+    .hero__slogan {
+      font-size: clamp(1rem, 3vw, 1.35rem);
+      font-weight: 600;
+      color: #d4a017;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 0.35rem;
+    }
+
+    .hero__subslogan {
+      font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+      color: #ccc;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero__phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #d4a017;
+      color: #111;
+      font-size: 1.25rem;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 0.75rem 2rem;
+      border-radius: 8px;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .hero__phone:hover {
+      background: #e6b422;
+      transform: translateY(-1px);
+    }
+
+    .hero__phone svg {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+    }
+
+    /* === FORM SECTION === */
+    .form-section {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 3rem;
+      flex: 1;
+    }
+
+    .form-section__heading {
+      text-align: center;
+      font-size: clamp(1.25rem, 4vw, 1.75rem);
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .form-section__sub {
+      text-align: center;
+      color: #aaa;
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .form-grid .full-width {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #ccc;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.3rem;
+    }
+
+    label .required {
+      color: #d4a017;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 0.7rem 0.85rem;
+      background: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 6px;
+      color: #f0f0f0;
+      font-family: inherit;
+      font-size: 1rem;
+      transition: border-color 0.2s;
+    }
+
+    input::placeholder {
+      color: #666;
+    }
+
+    input:focus, select:focus {
+      outline: none;
+      border-color: #d4a017;
+    }
+
+    select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23999' d='M1.41 0L6 4.58 10.59 0 12 1.41l-6 6-6-6z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.85rem center;
+      padding-right: 2.5rem;
+      cursor: pointer;
+    }
+
+    select option {
+      background: #1e1e1e;
+      color: #f0f0f0;
+    }
+
+    .btn-submit {
+      grid-column: 1 / -1;
+      padding: 0.9rem 2rem;
+      background: #d4a017;
+      color: #111;
+      font-family: inherit;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      margin-top: 0.5rem;
+    }
+
+    .btn-submit:hover {
+      background: #e6b422;
+      transform: translateY(-1px);
+    }
+
+    .btn-submit:active {
+      transform: translateY(0);
+    }
+
+    /* === THANK-YOU MESSAGE === */
+    .thank-you {
+      display: none;
+      text-align: center;
+      padding: 3rem 1.5rem;
+    }
+
+    .thank-you.show {
+      display: block;
+    }
+
+    .thank-you__icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .thank-you h2 {
+      font-size: 1.75rem;
+      margin-bottom: 0.5rem;
+      color: #d4a017;
+    }
+
+    .thank-you p {
+      color: #ccc;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    /* === FOOTER === */
+    footer {
+      background: #0a0a0a;
+      border-top: 2px solid #222;
+      text-align: center;
+      padding: 2rem 1.5rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    footer a {
+      color: #d4a017;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer__phone {
+      font-size: 1.15rem;
+      color: #f0f0f0;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer__details {
+      margin-top: 0.35rem;
+      line-height: 1.7;
+    }
+
+    .footer__copy {
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      color: #555;
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 600px) {
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 2.5rem 1rem 2rem;
+      }
+
+      .form-section {
+        padding: 2rem 1rem 2.5rem;
+      }
+
+      .hero__phone {
+        font-size: 1.1rem;
+        padding: 0.65rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="hero__badge">24/7 Emergency Service</div>
+    <h1 class="hero__title">Lock N' <span>Go</span> Roadside Assistance</h1>
+    <p class="hero__slogan">Fast, Fair, Done Right</p>
+    <p class="hero__subslogan">Let's get you back on the road.</p>
+    <a href="tel:+18504662651" class="hero__phone">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.72 11.72 0 003.66.59 1 1 0 011 1v3.59a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.59a1 1 0 011 1 11.72 11.72 0 00.59 3.66 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+      (850) 466-2651
+    </a>
+  </header>
+
+  <!-- ===== FORM ===== -->
+  <main class="form-section" id="form-section">
+    <h2 class="form-section__heading">Request Roadside Assistance</h2>
+    <p class="form-section__sub">Fill out the form below and we'll get back to you ASAP.</p>
+
+    <form id="intake-form" action="https://formsubmit.co/LockAndGo@yahoo.com" method="POST" class="form-grid">
+      <!-- FormSubmit hidden fields -->
+      <input type="hidden" name="_subject" value="New Roadside Assistance Request">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="_next" id="redirect-url">
+
+      <!-- Row 1 -->
+      <div>
+        <label for="name">Name <span class="required">*</span></label>
+        <input type="text" id="name" name="Name" placeholder="Your full name" required>
+      </div>
+      <div>
+        <label for="phone">Phone Number <span class="required">*</span></label>
+        <input type="tel" id="phone" name="Phone Number" placeholder="(555) 123-4567" required>
+      </div>
+
+      <!-- Row 2 -->
+      <div>
+        <label for="address">Address</label>
+        <input type="text" id="address" name="Address" placeholder="Street address or location">
+      </div>
+      <div>
+        <label for="city">City</label>
+        <input type="text" id="city" name="City" placeholder="City">
+      </div>
+
+      <!-- Row 3 -->
+      <div>
+        <label for="state">State</label>
+        <input type="text" id="state" name="State" placeholder="FL" maxlength="2">
+      </div>
+      <div>
+        <label for="zip">Zip Code</label>
+        <input type="text" id="zip" name="Zip Code" placeholder="32501" maxlength="10">
+      </div>
+
+      <!-- Row 4 -->
+      <div>
+        <label for="year">Year</label>
+        <input type="text" id="year" name="Vehicle Year" placeholder="2024" maxlength="4">
+      </div>
+      <div>
+        <label for="make">Make</label>
+        <input type="text" id="make" name="Vehicle Make" placeholder="Toyota, Ford, etc.">
+      </div>
+
+      <!-- Row 5 -->
+      <div>
+        <label for="model">Model</label>
+        <input type="text" id="model" name="Vehicle Model" placeholder="Camry, F-150, etc.">
+      </div>
+      <div>
+        <label for="color">Color</label>
+        <input type="text" id="color" name="Vehicle Color" placeholder="Vehicle color">
+      </div>
+
+      <!-- Row 6 -->
+      <div class="full-width">
+        <label for="job-type">Job Type Needed</label>
+        <select id="job-type" name="Job Type">
+          <option value="" disabled selected>Select a service...</option>
+          <option value="Lockout">Lockout</option>
+          <option value="Tire Change">Tire Change</option>
+          <option value="Jump Start">Jump Start</option>
+          <option value="Fuel Delivery">Fuel Delivery</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="btn-submit">Submit Request</button>
+    </form>
+
+    <!-- Thank-you message (shown after redirect back) -->
+    <div class="thank-you" id="thank-you">
+      <div class="thank-you__icon" aria-hidden="true">&#10003;</div>
+      <h2>Request Received!</h2>
+      <p>Thank you for reaching out. We'll contact you shortly. For immediate help, call <a href="tel:+18504662651" style="color:#d4a017">(850) 466-2651</a>.</p>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer__phone">
+      Call us anytime: <a href="tel:+18504662651">(850) 466-2651</a>
+    </div>
+    <div class="footer__details">
+      Serving Pensacola, Escambia County &amp; surrounding areas<br>
+      Available 24 hours a day, 7 days a week
+    </div>
+    <div class="footer__copy">
+      &copy; <span id="year-copy"></span> Lock N' Go Roadside Assistance. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- ===== SEO KEYWORD BLOCK (screen-reader & crawler accessible) ===== -->
+  <div class="sr-only" aria-label="Service information">
+    Lock N' Go Roadside Assistance provides 24/7 emergency roadside service in Pensacola, Florida and Escambia County.
+    Services include car lockout, vehicle lockout, tire change, flat tire repair, jump start, dead battery service, fuel delivery, and gas delivery.
+    Serving zip codes 32501, 32502, 32503, 32504, 32505, 32506, 32507, 32508, 32509, 32511, 32512, 32513, 32514, 32516, 32520, 32521, 32522, 32523, 32524, 32526, 32534, 32535, 32559, 32560, 32568, 32577, and surrounding areas.
+    Emergency roadside assistance Pensacola. Roadside help Escambia County. Mobile locksmith Pensacola.
+    Affordable roadside assistance. Fast roadside service. Reliable roadside help near me.
+  </div>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script>
+    // Set dynamic redirect URL for FormSubmit (back to this page with ?thanks=1)
+    document.getElementById('redirect-url').value =
+      window.location.href.split('?')[0] + '?thanks=1';
+
+    // Show thank-you message if redirected back after form submission
+    if (new URLSearchParams(window.location.search).has('thanks')) {
+      document.getElementById('intake-form').style.display = 'none';
+      document.querySelector('.form-section__heading').style.display = 'none';
+      document.querySelector('.form-section__sub').style.display = 'none';
+      document.getElementById('thank-you').classList.add('show');
+    }
+
+    // Set copyright year
+    document.getElementById('year-copy').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
