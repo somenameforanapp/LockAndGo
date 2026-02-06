@@ -323,6 +323,35 @@
       margin: 0 auto;
     }
 
+    /* === SERVICE AREA === */
+    .service-area {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #1a1a1a;
+      border-top: 2px solid #222;
+    }
+
+    .service-area__heading {
+      font-size: clamp(1.5rem, 5vw, 2.25rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin-bottom: 1.25rem;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .service-area__zips {
+      font-size: 0.95rem;
+      color: #aaa;
+      letter-spacing: 0.02em;
+    }
+
+    .service-area__zips strong {
+      color: #d4a017;
+    }
+
     /* === FOOTER === */
     footer {
       background: #0a0a0a;
@@ -387,8 +416,8 @@
   <header class="hero">
     <div class="hero__badge">24/7 Emergency Service</div>
     <h1 class="hero__title">Lock N' <span>Go</span> Roadside Assistance</h1>
-    <p class="hero__slogan">Fast, Fair, Done Right</p>
     <p class="hero__subslogan">Let's get you back on the road.</p>
+    <p class="hero__slogan">Fast, Fair, Done Right</p>
     <a href="tel:+18509126700" class="hero__phone">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.72 11.72 0 003.66.59 1 1 0 011 1v3.59a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.59a1 1 0 011 1 11.72 11.72 0 00.59 3.66 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
       (850) 912-6700
@@ -482,6 +511,12 @@
       <p>Thank you for reaching out. We'll contact you shortly. For immediate help, call <a href="tel:+18509126700" style="color:#d4a017">(850) 912-6700</a>.</p>
     </div>
   </main>
+
+  <!-- ===== SERVICE AREA ===== -->
+  <section class="service-area">
+    <h2 class="service-area__heading">Proudly Serving Pensacola &amp; Surrounding Areas for Over 15 Years</h2>
+    <p class="service-area__zips"><strong>Zip Codes Covered:</strong> 32501 - 32507 / 32514 / 32526 / 32533 / 32534</p>
+  </section>
 
   <!-- ===== FOOTER ===== -->
   <footer>
