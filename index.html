@@ -553,6 +553,11 @@
       document.querySelector('.form-section__heading').style.display = 'none';
       document.querySelector('.form-section__sub').style.display = 'none';
       document.getElementById('thank-you').classList.add('show');
+
+      // Clear URL parameter after 3 seconds so page resets
+      setTimeout(() => {
+        window.history.replaceState({}, document.title, window.location.href.split('?')[0]);
+      }, 3000);
     }
 
     // Set copyright year
